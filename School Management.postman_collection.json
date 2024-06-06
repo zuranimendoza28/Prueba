@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "3f1b736b-41e1-4ab2-ae61-bcd28ebd0bc8",
+		"name": "School Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34676735"
+	},
+	"item": [
+		{
+			"name": "Get Courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5118/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5118",
+					"path": [
+						"api",
+						"courses"
+					]
+				},
+				"description": "This enpoint is responsible for returning all courses"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5118/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5118",
+					"path": [
+						"api",
+						"students"
+					]
+				},
+				"description": "This enpoint is responsible for returning all students"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Teachers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5118/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5118",
+					"path": [
+						"api",
+						"students"
+					]
+				},
+				"description": "This enpoint is responsible for returning all Teachers"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Enrollments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5118/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5118",
+					"path": [
+						"api",
+						"students"
+					]
+				},
+				"description": "This enpoint is responsible for returning all Enrollments"
+			},
+			"response": []
+		},
+		{
+			"name": "Post Students",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"Names\": \"robi\",\r\n        \"BirthDate\": \"2024-03-01\",\r\n        \"Address\": \"carrera 104\",\r\n        \"Email\": \"robinson.cortes@riwi.io\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5118/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5118",
+					"path": [
+						"api",
+						"students"
+					]
+				},
+				"description": "This enpoint is responsible for Creating athe Students with the next body"
+			},
+			"response": []
+		},
+		{
+			"name": "Post Courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   \r\n    {\r\n        \"Name\": \"Español\",\r\n        \"Description\": \"mmmmmm\",\r\n        \"Duration\": \"8 meses\",\r\n        \"Schedule\": \"kkkk\",\r\n        \"Capacity\": 10,\r\n        \"TeacherId\": 1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5118/api/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5118",
+					"path": [
+						"api",
+						"courses"
+					]
+				},
+				"description": "This enpoint is responsible for Creating athe Courses with the next body"
+			},
+			"response": []
+		},
+		{
+			"name": "Post Teachers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"Names\": \"juanda\",\r\n        \"Specialty\": \"desarrollo \",\r\n        \"Email\": \"juanda@gmail.com\",\r\n        \"phone\": \"12345\",\r\n        \"YearsExperience\": 2\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5118/api/teachers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5118",
+					"path": [
+						"api",
+						"teachers"
+					]
+				},
+				"description": "This enpoint is responsible for Creating the teachers with the next body"
+			},
+			"response": []
+		},
+		{
+			"name": "Post Enrollments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"Date\": \"2009-04-01\",\r\n        \"StudentId\": 5,\r\n        \"CourseId\": 3\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5118/api/enrollments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5118",
+					"path": [
+						"api",
+						"enrollments"
+					]
+				},
+				"description": "This enpoint is responsible for Creating the enrollments with the next body"
+			},
+			"response": []
+		},
+		{
+			"name": "Put Enrollments",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"Id\": 1,\r\n        \"Date\": \"2009-04-01\",\r\n        \"StudentId\": 1,\r\n        \"CourseId\": 3\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5118/api/enrollments/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5118",
+					"path": [
+						"api",
+						"enrollments",
+						"1"
+					]
+				},
+				"description": "This endpoint is responsible for updating the Enrollments\n\nwith the next body"
+			},
+			"response": []
+		},
+		{
+			"name": "Put Courses",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"Id\": 1,\r\n        \"Name\": \"ing.....les\",\r\n        \"Description\": \"mmmmmm\",\r\n        \"Duration\": \"8 meses\",\r\n        \"Schedule\": \"kkkk\",\r\n        \"Capacity\": 10,\r\n        \"TeacherId\": 1\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5118/api/courses/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5118",
+					"path": [
+						"api",
+						"courses",
+						"1"
+					]
+				},
+				"description": "This endpoint is responsible for updating the Courses\n\nwith the next body"
+			},
+			"response": []
+		},
+		{
+			"name": "Put Students",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n {\r\n    \"Id\": 1,\r\n    \"Names\": \"holii\",\r\n    \"BirthDate\": \"2024-03-01\",\r\n    \"Address\": \"carrera 104\",\r\n    \"Email\": \"holii@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5118/api/Students/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5118",
+					"path": [
+						"api",
+						"Students",
+						"1"
+					]
+				},
+				"description": "This endpoint is responsible for updating students\n\nwith the next body"
+			},
+			"response": []
+		},
+		{
+			"name": "Put Teachers",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 1,\r\n    \"Names\": \"viviana\",\r\n    \"Specialty\": \"ingles \",\r\n    \"Email\": \"viviana@gmail.com\",\r\n    \"phone\": \"12345\",\r\n    \"YearsExperience\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5118/api/Teachers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5118",
+					"path": [
+						"api",
+						"Teachers",
+						"1"
+					]
+				},
+				"description": "This endpoint is responsible for updating Teachers\n\nwith the next body"
+			},
+			"response": []
+		}
+	]
+}
